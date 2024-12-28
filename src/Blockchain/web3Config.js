@@ -17,6 +17,7 @@ const initWeb3 = async () => {
       const accounts = await web3.eth.getAccounts();
       console.log('Ethereum accounts accessed:', accounts);
       return accounts; // Return the accounts for further use
+      console.log("ee")
     } catch (error) {
       console.error('User denied account access:', error);
       throw new Error('User denied account access'); // Throw an error for handling in other parts of the app
